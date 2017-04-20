@@ -15,8 +15,8 @@ app.registerInitializer({
   }
 });
 
-// app.renderComponent('glimmer-deploy-test', containerElement, null);
+app.renderComponent('glimmer-deploy-test', containerElement, null);
 
 app.boot();
 
-initializeCustomElements(app, ['glimmer-deploy-test']);
+// initializeCustomElements(app, ['glimmer-deploy-test']);
