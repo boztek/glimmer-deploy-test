@@ -1,5 +1,6 @@
 import App from './main';
 import { ComponentManager, setPropertyDidChange } from '@glimmer/component';
+import initializeCustomElements from '@glimmer/web-component';
 
 const app = new App();
 const containerElement = document.getElementById('app');
@@ -14,6 +15,8 @@ app.registerInitializer({
   }
 });
 
-app.renderComponent('glimmer-deploy-test', containerElement, null);
+// app.renderComponent('glimmer-deploy-test', containerElement, null);
 
 app.boot();
+
+initializeCustomElements(app, ['glimmer-deploy-test']);
