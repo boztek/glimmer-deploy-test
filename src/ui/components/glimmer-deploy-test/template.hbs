@@ -1,4 +1,5 @@
 <div>
   <h1>{{title}}</h1>
-  <glimmer-deploy-sub-component @foo="bar" />
+  <glimmer-deploy-sub-component @foo={{state}} />
+  <input type="text" onkeyup={{action passTextToSubComp}} />
 </div>
